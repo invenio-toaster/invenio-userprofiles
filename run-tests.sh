@@ -11,4 +11,4 @@ pydocstyle invenio_userprofiles && \
 isort invenio_userprofiles tests --check-only --diff && \
 check-manifest --ignore ".travis-*" && \
 sphinx-build -qnNW docs docs/_build/html && \
-python setup.py test
+python -m pytest
